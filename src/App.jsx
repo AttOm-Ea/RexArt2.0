@@ -3,6 +3,8 @@ import Design from './pages/Design'
 import Home from './pages/Home'
 import Web from './pages/Web';
 import { useState } from 'react'
+import Media from './pages/Media';
+import Marketing from './pages/Marketing';
 
 
 
@@ -15,15 +17,14 @@ function App() {
     if (openClose) {
       setAnnimate(false)
       setIcontools(true)
-      
     }else{
       setAnnimate(true)
-      
     }
   }
 
   return (
     <>
+      <h1 className='hidden'> Colectivo artistico y digital</h1>
       <div className={`w-full flex flex-col relative overscroll-none`}>
         <div className={`h-screen fixed top-0 left-0 ease-in-out duration-0 ${sideBar? 'w-full' : 'w-0'}`} onClick={()=>setSideBar(!sideBar)}> 
           <div className={`w-full h-full ease-in-out duration-500 ${sideBar? 'bg-gray-900/60' : 'bg-inherit'}`} onClick={()=>setSideBar(!sideBar)}> </div>
@@ -53,10 +54,10 @@ function App() {
 
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/design' element={<Design/>}/>
+          <Route path='/design' element={<Design/> }/>
           <Route path='/web' element={ <Web/> }/>
-          <Route path='/media' element={<h1> hi media!</h1>}/>
-          <Route path='/marketing' element={<h1> hi marketing!</h1>}/>
+          <Route path='/media' element={<Media/> }/>
+          <Route path='/marketing' element={ <Marketing/> }/>
           <Route path='/*' element={<h1> 404 Not Found this page</h1>}/>
         </Routes>
       </div>
