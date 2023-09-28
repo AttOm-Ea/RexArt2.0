@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "coco";
+    src: url("../public/fonts/CocoGothic-Light_trial.ttf");
+}
