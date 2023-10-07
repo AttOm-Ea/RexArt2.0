@@ -2,6 +2,7 @@ import React from 'react';
 import Prelude from '../components/Prelude';
 import CardDesing from '../components/design/CardDesing';
 import Footer from '../components/footer';
+import Divider from '../components/Divider';
 
 function Design() {
     return (
@@ -11,7 +12,7 @@ function Design() {
                 <div className="w-full h-full bg-[length:125%_] lg:bg-contain  bg-no-repeat bg-center bg-[url('/img/2_Diseño/DiseñoDino.webp')]"> </div>
             </div>
             <Prelude title="Diseño" file="2_Diseño" pic="PicDiseño" text="Optimiza y mejora la comunicación gráfica de tu marca con un diseño artístico y creativo que vuelva única tu identidad."/>
-            <div className=' w-full h-16 bg-gray-900/90'> {/* Divider */} </div>
+            <Divider/>
             <section className='w-full'>
                 <h4 className='font-coco text-3xl md:text-6xl uppercase w-full text-slate-500 text-center mt-8'> Colection </h4>
                 <CardDesing img="LaHuerta" logo="Logo-01" order={true}/>
